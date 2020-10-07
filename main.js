@@ -45,8 +45,13 @@ for (let i = 0; i < heart.length; i++) {
 // delete
 for (let i = 0; i < delet.length; i++) {
   delet[i].addEventListener("click", function () {
-    if (Array.from(heart[i].classList).includes("red-heart")) {
-      alert("this product is in the favorites list! you must cancel the like.");
+    if (
+      Array.from(heart[i].classList).includes("red-heart") ||
+      minus[i].nextElementSibling.innerHTML > 0
+    ) {
+      alert(
+        "this product is in the favorites list! you must cancel the like, or your quantity must be 0."
+      );
     } else {
       delet[i].parentElement.parentElement.remove();
     }
