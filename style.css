@@ -4,6 +4,7 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
 }
 .navbar {
   position: fixed !important;
@@ -11,59 +12,84 @@ body {
   top: 0px;
   left: 0px;
   z-index: 2;
+  background-color: rgb(120, 120, 120) !important;
+  color: white !important;
 }
-form input {
-  border: 1px solid black !important;
-  border-radius: 5px !important;
+.navbar-toggler,
+.dropdown-menu {
+  background-color: rgb(187, 179, 179) !important;
+}
+.title {
+  color: rgb(160, 12, 111);
+  padding: 0px 20px;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.total {
+  border: 1px solid rgb(160, 12, 111);
+  border-radius: 10px;
+  padding: 1%;
+}
+.main {
+  position: relative !important;
+  top: 74px !important;
+  left: 0px;
+  background-color: rgb(156, 190, 167);
+}
+.carousel-item img {
+  height: 36rem !important;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .product {
   display: flex;
   flex-direction: column;
-  border: 10px solid rgb(197, 188, 188);
-  height: 450px;
+  margin: 10px;
+  background-color: white;
   border-radius: 10px;
+  border: 1px solid rgb(156, 190, 167);
+  box-shadow: 10px 10px 5px 5px grey;
 }
-.instruction {
-  width: 100%;
-  justify-content: space-between !important;
-  align-items: baseline;
-}
-.cart {
+.icons {
   display: flex;
-  flex-wrap: wrap;
-  padding-left: 50px;
+  justify-content: space-between;
 }
-main {
-  position: relative;
+.instru {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.total {
-  background-color: rgb(53, 51, 51);
-  color: rgb(228, 220, 220);
-  padding-left: 10rem;
+.qte {
+  border: 1px solid rgb(156, 190, 167);
+  padding: 5px 10px;
+  text-align: center;
 }
-.total h3 {
-  margin-bottom: 0% !important;
+.product img {
+  width: 18rem !important;
+  height: 250px;
+  border-radius: 5%;
 }
-.cart .fa {
+.cards .fa {
   padding: 10px;
-  font-size: 50px !important;
+  font-size: 20px !important;
+  color: rgb(5, 34, 34);
 }
 footer {
   display: flex !important;
-  flex-direction: column;
-  margin-left: 20px;
-  margin-top: 10px;
-  background-color: rgb(151, 143, 143);
+  justify-content: space-evenly;
+  background-color: rgb(120, 120, 120);
   color: white;
-  padding-left: 25px;
-}
-.product h3 {
-  margin: 0 !important;
-  padding: 0 !important ;
-}
-span {
-  font-size: 50px;
+  padding: 10px !important;
 }
 .red-heart {
-  color: red;
+  color: red !important;
 }

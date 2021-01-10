@@ -4,12 +4,6 @@ let plus = document.querySelectorAll(".fa-plus");
 let minus = document.querySelectorAll(".fa-minus");
 let total = document.querySelector(".total-price");
 
-console.log(delet);
-console.log(heart);
-console.log(plus);
-console.log(minus);
-console.log(total);
-
 // plus
 for (let i = 0; i < plus.length; i++) {
   plus[i].addEventListener("click", function () {
